@@ -1,80 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title>MIT-WPU Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(
+        135deg, 
+        #1e2a78,   /* dark blue */
+        #512b7e,   /* purple */
+        #a72879,   /* magenta */
+        #f64c72    /* pink */
+      );
+      background-size: 400% 400%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .form-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-box h1 {
+      text-align: center;
+      background-color: DodgerBlue;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      color: #1e2a78;
+      margin-bottom: 20px;
+    }
+
+    .form-box label {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-box input,
+    .form-box select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .form-box input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .form-box small {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .form-box input[type="submit"] {
+      background-color: #f64c72;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .form-box input[type="submit"]:hover {
+      background-color: #d43b60;
+    }
+
     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
+    }
+  </style>
 </head>
 <body>
-    <form action="file:///C:/Users/user/Documents/thankregform.html">
-    <fieldset>
-    <label for="fname"> Full name: </label>
-    <br>
-    <input type="text" id="fname" name="fname">
-    <br>
-    <label for="email"> Enter a valid Email: </label>
-    <br>
-    <input type="email" id="email" name="email">
-    <br>
-    <label for="pw"> Enter Password: </label>
-    <br>
-    <input type="password" id="pw" name="pw">
-    <br>
-    <label for="pw"> Confirm password: </label>
-    <br>
-    <input type="password"  id="pw" name="pw">
-    <br>
-    <p> Select gender: </p>
-     <label for="male">Male</label>
-    <input type="radio" id="male" name="gender">
-    <br>
-    <label for="female">Female</label>
-    <input type="radio" id="female" name="gender">
-    <br>
-    <label for="other">Prefer not to say</label>
-    <input type="radio" id="other" name="gender">
-    <br>
-    <p>Select your hobbies: </p>
-    <label for="reading">Reading</label>
-    <input type="checkbox" id="reading" name="hobby">
-    <br>
-    <label for="cycling">Cycling</label>
-    <input type="checkbox" id="cycling" name="hobby">
-    <br>
-    <label for="drawing/painting">Drawing/Painting</label>
-    <input type="checkbox" id="drawing/painting" name="hobby">
-    <br>
-    <label for="dancing">Dancing</label>
-    <input type="checkbox" id="dancing" name="hobby">
-    <br>
-    <label for="singing">Singing</label>
-    <input type="checkbox" id="singing" name="hobby">
-    <br>
-    <br>
-    <label for="dob">Enter Date of Birth: </label>
-     <input type="date" id="dob" name="dob">
-    <br>
-    <br>
-    <label for="profile">Upload profile picture: </label>
-    <input type="file" id="profile" name="profile">
-    <br>
-    <br>
-    <label for="country">Select Country:</label>
-  <select id="country" name="country" size="2" multiple>
-    <option value="india">India</option>
-    <option value="dubai">Dubai</option>
-    <option value="russia">Russia</option>
-    <option value="uk">UK</option>
-    <option value="usa">USA</option>
-    <option value="australia">Australia</option>
-  </select>
-  <br>
-  <br>
-  <br>
-<textarea name="feedback" placeholder="Give your feedback" height="100px" rows="10"></textarea>
-<br>
-<input type="submit" value="submit">
-</fieldset>
-</body>
+
+  <div class="form-box">
+    
+    <h2>Course Registration Form</h2>
+
+    <form>
+     
+      <label>Student's Name:</label>
+      <input type="text" placeholder="First name">
+      <input type="text" placeholder="Last name">
+
+      <label>Parents' Name:</label>
+      <input type="text" placeholder="Father's name">
+      <input type="text" placeholder="Mother's name">
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob">
+
+      <label>Phone Number:</label>
+      <input type="tel" placeholder="+91" pattern="[0-9]{10}" required>
+      <small>Format: +91-1234567890</small>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Password:</label>
+      <input type="password" minlength="6" required>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+      <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+      <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label><br><br>
+
+      
+
+      <label>Course:</label>
+      <select name="course">
+        <option value="">--Select--</option>
+        <option value="CSE Core">Integrated BTech in CSE Core</option>
+        <option value="Mechanical">Integrated BTech in Mechanical (Core)</option>
+        <option value="ECE">Integrated BTech in ECE</option>
+        <option value="Civil">Integrated BTech in Civil</option>
+      </select>
+       <form action="file:///C:/Users/poly.lab/Documents/thankyoupage.html">
+
+      <button>
+        Submit
+      </button>
+    </form>
+    </form>
+  </div>
 </html>
+
+</body>
