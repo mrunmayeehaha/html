@@ -1,30 +1,113 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>portfolio</title>
-    <style>
-      body{
-        background-color: lightpink;
-        color:maroon;
-      }
-    </style>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 400px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .project {
+      flex: 1 1 100px;
+      background-color: #fafafa;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 30px;
+    }
+
     
-      <h2 style="text-align:center;"> MRUNMAYEE DEORE </h2> 
-     <li style="font-size: 20px;"> <a href="file:///C:/Users/user/Documents/portfolio.html/abtme.html">About me</a></li>
-     <li style="font-size:20px;"><a href="file:///C:/Users/user/Documents/edudetails.html">Education Details</a></li>
-      <li style="font-size:20px;"> <a href="file:///C:/Users/user/Documents/projects.html">Projects</a></li>
-    <li style="font-size:20px;"><a href="file:///C:/Users/user/Documents/contact.html">Contact</a></li>
-  <br>
-  <h3>ABOUT ME:</h3>
-  <p> I am a sudent at MIT-WPU Pune</p>
-  <h3>EDUCATION DETAILS: </h3>
-  <p>I am pursuing Int. Btech Computer Science second year </p>
-  <h3>PROJECTS: </h3>
-  <p>Projects: 1) HTML Forms , HTML Table</p>
-  <h3>cONTACT ME: </h3>
-  <p>Email: deoremrunmayee1@gmail.com</p>
-  
-  </body>
-</html>
+
+      
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Mrunmayee Deore a student of Integrated Btech Computer Science at MIT-WPU Pune. I am at the second year of my program and currently learning programming languages like C , C++ , HTML , SQl. I am also a passionate Bharatnatyam dancer and have successfully completed 5 exams of it.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p> Registration form creation using HTL and CSS</p>
+        <a href="https://github.com/mrunmayeehaha/html/blob/main/regform.html">Project 2</a>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Creation of Web page using HTML and CSS</p>
+        <a href="https://github.com/mrunmayeehaha/html/blob/main/Web%20page"> Project 2</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Phone no.: 123456899</p>
+    <p>Email:deoremrunmayee1@gmail.com</p>
+    <p>Github: <a href="https://github.com/mrunmayeehaha/html" target="_blank">Github Profile</a></p>
+    
+  </section>
