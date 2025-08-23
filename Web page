@@ -1,57 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-table, th, td {
-  table-layout=style:"center aligned";
-  border:3px solid;
-  border-color: #96D4D4;
-  padding: 10px;
-}
-</style>
-<title>book store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Nest - Your Local Bookstore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .header {
+      background-color: #3e2f2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav {
+      background-color: #6a4c4a;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #4a2c2a;
+    }
+
+    .genre-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .genre {
+      background-color: #f2f2f2;
+      padding: 15px;
+      border-radius: 5px;
+      width: 220px;
+    }
+
+    .footer {
+      background-color: #3e2f2f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .genre-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .genre {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
-<body background-color:"powderblue;" "background-color:rgba(255, 99, 71, 0.8);">
- 
-<h1 style="text-align:center">|THE BOOK STORE|<h1>
-<br>
-<h3 style="color:blue;" style="font-size:15px;" style="text-align:center;"> "Books, silent companions and boundless sources of wisdom,
-    have the power to transport us to other worlds, 
-    introduce us to fascinating characters, 
-    and broaden our understanding of the human experience."</h3>
-<br>
-<img src="https://www.google.com/imgres?q=books%20photo&imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fflying-magic-books-library-367534733.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fbooks.html&docid=PS_cDBX8mNJtDM&tbnid=O_8Fze2CFPnGSM&vet=12ahUKEwjFt9_d5eaOAxVB3TgGHU-NO_oQM3oECCMQAA..i&w=800&h=449&hcb=2&ved=2ahUKEwjFt9_d5eaOAxVB3TgGHU-NO_oQM3oECCMQAA">
-<img src="https://www.google.com/imgres?q=books%20photo&imgurl=https%3A%2F%2Fcollegeinfogeek.com%2Fwp-content%2Fuploads%2F2018%2F11%2FEssential-Books.jpg&imgrefurl=https%3A%2F%2Fcollegeinfogeek.com%2Fessential-books-for-students%2F&docid=I9ADAM68jodh6M&tbnid=LCgom27LhXfuDM&vet=12ahUKEwiU2M7a7uaOAxURzTgGHewqL_kQM3oECHYQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwiU2M7a7uaOAxURzTgGHewqL_kQM3oECHYQAA">
-<br>
-<br>
-<table style="width:70%;">
-<tr>
-<th>BOOK GENRES</th>
-<th>STARTING FROM</th>
-</tr>
-<br>
-<tr>
-<td>THRILLER</td>
-<td>From 199</td>
-</tr>
-<br>
-<tr>
-<td>MOTIVATIONAL</td>
-<td>From 200</td>
-</tr>
-<tr>
-<td>FANTASY</td>
-<td>From 399</td>
-</tr>
-<tr>
-<td>BIOGRAPHIES</td>
-<td>From 499</td>
-</tr>
-</table
-<br>
-<br>
-<iframe = "https://youtu.be/vvKUuFk_uWI?si=K9sl9sYCbxdBILYz">Youtube link</iframe>
-<p>VISIT THE LINK TO KNOW MORE ABOUT US:</p>
-<a href="https://pragationline.com/?srsltid=AfmBOorYwq1v3YYTJ8QIBlJ4uXkF-1erOfNyn4TRBhtQS6rDfKa71sXt">More About Us</a>
+<body>
+
+  <div class="header">
+    <h1>📚 Book Nest</h1>
+    <p>|Your friendly neighborhood bookstore|</p>
+  </div>
+
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Genres</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+
+    <div class="section">
+      <h2>📅 Store Timings</h2>
+      <p><strong>Monday to Saturday:</strong> 9:00 AM - 8:00 PM</p>
+      <p><strong>Sunday:</strong> 10:00 AM - 5:00 PM</p>
+    </div>
+
+    <div class="section">
+      <h2>💵 Starting Prices:</h2>
+      <div class="genre-list">
+        <div class="genre">
+          <h3>Fiction</h3>
+          <p>Starting at ₹150</p>
+        </div>
+        <div class="genre">
+          <h3>Non-Fiction</h3>
+          <p>Starting at ₹200</p>
+        </div>
+        <div class="genre">
+          <h3>Children's Books</h3>
+          <p>Starting at ₹100</p>
+        </div>
+        <div class="genre">
+          <h3>Mystery & Thriller</h3>
+          <p>Starting at ₹180</p>
+        </div>
+        <div class="genre">
+          <h3>Science & Tech</h3>
+          <p>Starting at ₹220</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🔥 Current Offers</h2>
+      <ul>
+        <li>Buy 2 Get 1 Free (on selected titles)</li>
+        <li>10% off on purchases over ₹500</li>
+        <li>Student Discount: Extra 5% with valid ID</li>
+        <li>Free home delivery for purchase over Rs.1000</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Book Nest. All rights reserved.</p>
+    <p>Contact: booknest@gmail.com | Phone: 98765 43210</p>
+  </div>
+
 </body>
 </html>
