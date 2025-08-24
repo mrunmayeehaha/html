@@ -18,13 +18,13 @@
       padding: 20px;
       text-align: center;
     }
-    
+
     .nav {
       background-color: #6a4c4a;
       padding: 10px;
       text-align: center;
     }
-    
+
     .nav a {
       color: white;
       margin: 0 15px;
@@ -104,6 +104,7 @@
       <h2>📅 Store Timings</h2>
       <p><strong>Monday to Saturday:</strong> 9:00 AM - 8:00 PM</p>
       <p><strong>Sunday:</strong> 10:00 AM - 5:00 PM</p>
+      <p><strong>Address:</strong> Shop no. 6, Harvard lane, Pune</p>
     </div>
 
     <div class="section">
@@ -141,12 +142,21 @@
         <li>Free home delivery for purchase over Rs.1000</li>
       </ul>
     </div>
+    
+    <div class="section">
+      <h2> Contact Us:</h2>
+      <ul>
+        <li>Phone no.: 00000 00000</li>
+        <li>Email:booknest@gmail.com </li>
+      </ul>
+    </div>
 
   </div>
+   
 
   <div class="footer">
     <p>&copy; 2025 Book Nest. All rights reserved.</p>
-    <p>Contact: booknest@gmail.com | Phone: 98765 43210</p>
+    <p>Contact: booknest@gmail.com | Phone: 0000000000</p>
   </div>
 
 </body>
