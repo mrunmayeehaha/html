@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<style>
-table,th,td {
-border-style:solid;
-border-color:#96D4D4;
-} 
-</style>
+<head>
+    <title>Student Marks</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
 
-    <title >HTML TABLE</title>
-    
-  </head>
-  <body>
-<p style="color:blue;" style=:"text-align: center;">STUDENT TABLE</p>
-      <table>
-        <tr>
-        <th width="120px">Name</th>
-        <th width="90px">Course</th>
-        <th width="90px">PRN</th>
-        <th width="90px">CGPA</th>
-         <th width="100px">City</th>
-         
-        </tr>
-        <tr>
-        <td>Mrunmayee</td>
-        <td>CSE</td>
-        <td>123</td>
-        <td>9.2</td>
-        <td>Pune</td>
-        </tr>
-        <tr>
-          <td>Anwesha </td>
-          <td>CSE</td>
-          <td>146</td>
-          <td>9.3</td>
-          <td>Pune</td>
-        </tr>
-        <tr>
-          <td>James</td>
-          <td>ECE</td>
-          <td>189</td>
-          <td>7.9</td>
-          <td>Pune</td>
-        </tr>
-        
-      </table>
-  </body>
+        th, td {
+            border: 1px solid ;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Marks</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>Math</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Science</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>History</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Diana</td>
+                <td>English</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Eva</td>
+                <td>Art</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
